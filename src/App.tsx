@@ -185,7 +185,7 @@ function App() {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: "28px",
+                gap: "22px",
                 margin: "16px 0px",
               }}
             >
@@ -195,6 +195,7 @@ function App() {
                 PB, 58041-030
               </p>
               <strong>Residencial guadarrama</strong>
+              <strong> 18:00 do dia 17 de setembro</strong>
             </div>
           ) : (
             <div style={{ width: "340px", height: "270px" }}>
