@@ -1,0 +1,33 @@
+.ModalContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.624);
+  z-index: 999999;
+
+  @media screen and (max-width: 768px) {
+    right: 15px;
+  }
+}
+
+.ModalContent {
+  flex-direction: column;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  width: 450px;
+  height: 400px;
+  gap: 50px;
+
+  @media screen and (max-width: 768px) {
+    width: 350px;
+    height: 400px;
+  }
+}
