@@ -109,12 +109,13 @@
 
   @media screen and (max-width: 768px) {
     bottom: 80px;
-    right: 18px;
+    right: 38px;
   }
 }
 
 .yesButton {
   font-size: 20px;
+  width: 35px;
   background-color: transparent;
   border: none;
   color: black;
@@ -132,6 +133,7 @@
 
 .noButton {
   font-size: 20px;
+  width: 35px;
   background-color: transparent;
   border: none;
   color: black;
@@ -159,7 +161,7 @@
 
 .goButton {
   background-image: linear-gradient(90deg, #ce43b0, #516be9, #1bddde);
-  color: whrete;
+  color: white;
   border-radius: 16px;
   font-weight: 700;
   background-size: 200%;

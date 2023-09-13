@@ -2,17 +2,14 @@ import { useEffect, useState } from "react";
 
 import { initializeApp } from "firebase/app";
 import {
-  collection,
   doc,
   getDoc,
-  getDocs,
   getFirestore,
   setDoc,
   updateDoc,
 } from "firebase/firestore";
 
 import styles from "./homePage.module.css";
-import Wanted from "./assets/wanted.png";
 import Wanted2 from "./assets/wanted2.jpg";
 import Luffy from "./assets/luffy.gif";
 import Luffynho from "./assets/luffyinho.gif";
@@ -49,24 +46,6 @@ function App() {
       }
 
       return false;
-    } catch (e) {
-      console.log("error get()", e);
-      return false;
-    }
-  };
-
-  const getAll = async (collectionName: any) => {
-    try {
-      const data: any[] = [];
-
-      const docRef = collection(db, collectionName);
-      const docSnap = await getDocs(docRef);
-
-      docSnap.forEach((doc) => {
-        data.push({ id: doc.id, ...doc.data() });
-      });
-
-      return data;
     } catch (e) {
       console.log("error get()", e);
       return false;

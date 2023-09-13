@@ -6,10 +6,6 @@
   right: 0;
   background: rgba(0, 0, 0, 0.624);
   z-index: 999999;
-
-  @media screen and (max-width: 768px) {
-    right: 15px;
-  }
 }
 
 .ModalContent {
